@@ -1,0 +1,22 @@
+.image-slider{
+  .slider1{
+    height: 15rem;
+  }
+  .slide1{
+    width: 8rem;
+    height: 10rem;
+    max-width: 8rem;
+    max-height: 10rem;
+    background: transparent !important;
+    margin: auto !important;
+    object-fit: contain;
+  }
+  .arrow1{
+    background: #121212 !important;
+    opacity: 0.3 !important;
+  }
+  .dots1{
+    position: absolute;
+    bottom: 0.5rem;
+  }
+}

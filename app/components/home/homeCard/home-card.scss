@@ -1,0 +1,94 @@
+.home-card {
+  border-top: 0.0625rem solid var(--bg-border);
+  padding: 5rem 0;
+  margin: 0 2rem;
+
+  .ride-title {
+    width: 20rem;
+  }
+  .section-desc1 {
+    padding-bottom: 1rem;
+  }
+
+  .navigate {
+    text-align: end;
+    margin-bottom: 1rem;
+    & img {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      border: 0.0625rem solid var(--button-border);
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+    .left {
+      margin-right: 0.7rem;
+    }
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pics {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+
+  .pics::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pic {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .pic > img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: "Aeonik medium";
+    line-height: 1.3rem;
+  }
+
+  .stock {
+    line-height: 1.2rem;
+    opacity: 0.8;
+  }
+
+  .hide {
+    opacity: 0.5;
+    cursor: not-allowed !important;
+  }
+}
+
+@media (min-width: 500px) {
+  .home-card {
+    .pic {
+      width: 25rem;
+    }
+    .pic > img {
+      width: 25rem;
+      height: 25.5rem;
+    }
+    .ride {
+      width: 31rem;
+    }
+    .ride > img {
+      width: 31rem;
+      height: 30rem;
+    }
+  }
+}

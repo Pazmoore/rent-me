@@ -1,0 +1,150 @@
+.ride-card{
+  .arrow{
+    text-align: end;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+  }
+  .arrow > img{
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+  }
+
+  .left{
+    margin-right: 0.3rem;
+  }
+  .hide{
+    opacity: 0.4;
+    cursor: not-allowed !important;
+  }
+
+  .cards{
+    display: flex;
+    justify-content: center;
+  }
+
+  .card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .card-scroll{
+    display: flex;
+    gap: 2rem;
+    overflow: auto;
+  }
+
+  .card-scroll::-webkit-scrollbar, .none{
+    display: none;
+  }
+
+  .box{
+    min-width: 28rem !important;
+    max-width: 28rem !important;
+    background: var(--hero-bg);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+  }
+
+  .image{
+    position: relative;
+    background: var(--ride);
+    border-radius: 1rem;
+  }
+
+  .type{
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    top: 0.7rem;
+    left: 0.7rem;
+    border: 0.0625rem solid var(--button-border);
+    border-radius: 2rem;
+    padding: 0.2rem 0.8rem;
+  }
+  .favorites{
+    position: absolute;
+    top: 1.2rem;
+    right: 0.7rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: "Aeonik medium";
+  }
+
+  .heading{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: "Aeonik medium";
+    line-height: 1.6rem;
+  }
+
+  .rating{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .rating > span{
+    font-size: 1.1rem !important;
+    line-height: 0.975rem;
+    opacity: 0.5;
+  }
+
+  .location{
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    gap: 0.8rem;
+    opacity: 0.8;
+  }
+
+  .star{
+    width: 1rem;
+    height: 0.9rem;
+  }
+  .icon{
+    width: 1.2rem;
+    height: 1.4rem;
+  }
+  .icon1{
+    width: 1.35rem;
+    height: 1.5rem;
+  }
+
+  .ride{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+    border-top: 0.0625rem solid var(--button-border);
+    padding-top: 1rem;
+  }
+  .ride-icon{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .ride-icon >img{
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .ride-icon > span, .type > span{
+    font-size: 0.9rem;
+    opacity: 0.6;
+  }
+}

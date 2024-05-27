@@ -1,0 +1,47 @@
+.dropdown{
+  display: none;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  background: var(--bg);
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.625rem;
+  overflow: auto;
+  border-top: 0.5rem solid var(--hero-bg);
+  z-index: 1100;
+  .top{
+    border-bottom: 0.0625rem solid var(--bg-border);
+    margin-top: 3rem;
+  }
+  &-content{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    cursor: pointer;
+    padding: 1rem;
+    & img{
+      width: 0.5rem;
+      height: 0.5rem;
+    }
+    &:hover{
+      background: var(--text1);
+    }
+  }
+  .close{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: var(--text1);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0 0.6rem 0.2rem;
+  }
+}
+.dropdown-active{
+  display: block;
+}

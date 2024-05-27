@@ -1,0 +1,17 @@
+.properties{
+  padding: 5rem 2rem;
+  .section-title{
+    padding-bottom: 3rem;
+  }
+  .image-card{
+    .image-header{
+      & span{
+        background: -webkit-linear-gradient(var(--text), #0FAF6273);
+        background-clip: text;
+        appearance: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}

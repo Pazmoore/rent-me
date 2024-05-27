@@ -1,0 +1,403 @@
+.profile{
+  display: flex;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.profile-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 25px;
+    margin-bottom: -0.25px;
+
+  
+    .profile-navbar-btn{
+      background-color:var(--color);
+      width: 75px;
+      height: 42px;
+      border-radius: 0.5rem;
+      font-weight: 200;
+      cursor: pointer;
+      color:#fff;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 20px;
+      margin-right: 1.5rem;
+      padding-right: 10px;
+    }
+     .profile-edit{
+      position: absolute;
+      margin-top: -1px;
+      margin-left: 3px;
+      
+
+    }
+    .password-btn{
+        width: 120px;
+        height: 42px;
+        background-color: #fff;
+        color: var(--desc);
+        font-weight: 500;
+        border: 1px;
+        border-radius: 0;
+        gap: 8px;
+    }
+    .password-btn:hover{
+      color: #26334D;
+      transition: all 0.2s;
+    }
+}
+
+.profile-img{
+    border-radius: 50%;
+}
+
+.profile-form{
+  padding-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  
+  .profile-box {
+    width: 50%;
+
+    .profile-box label{
+      font-size: 12px;
+      font-weight: 700;
+      height: 20px;
+      gap: 10px;
+    }
+    input{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+      padding-left: 15px;
+      border: 0;
+      border-radius: 4px;
+      background-color:#FAFBFC;
+      font-size: 16px;
+      color: #F0F2F7;
+      width: 446px;
+      height: 54px;
+      top: 339px;
+      left: 353px;
+      border: 2px solid;
+      border-radius: 8px;
+      font-weight: 200;
+      gap: 18px;
+    }
+  }
+
+  .pass-img{
+    display: flex;
+
+    .passimage{
+      position: relative;
+      right: 50px;
+      bottom: 10px;
+   }
+  }
+  
+}
+
+.profile-two {
+  margin-top: 50px;
+  display: grid;
+  gap: 18px;
+  font-weight: 400;
+  
+
+  .about {
+    padding-bottom: 20px;
+  }
+
+  .about p {
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .about .link{
+    color: var(--text);
+    font-weight: 600;
+  }
+  .about .link::after{
+    content: '';
+    height: 2px;
+    width: 30px;
+    background-color: var(--text) ;
+    display: block;
+    opacity: 0;
+    transition: all 0.2s;
+
+  }
+  .about .link:hover::after{
+    opacity: 1;
+  }
+}
+  
+@media (max-width: 990px) {
+  .profile-form{
+    display: grid;
+
+    .pass-img{
+      display: grid;
+      .passimage{
+        display: flex;
+        position: relative;
+        left: 28rem;
+        bottom: 63px;
+     }
+    }
+  }
+  .profile-two {
+    display: grid;
+  }
+} 
+
+  
+ 
+@media (max-width: 450px) {
+  .navbar-btn{
+   display: none;
+  }
+}
+  
+// Edit profile
+.edit{
+  .editImg{
+    display: grid;
+    .edit-img-two{
+      position: relative;
+      bottom: 25px;
+      left:30px;
+    }
+  }
+
+
+  .editProfile{
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .edit-profile-box label{
+      font-size: 12px;
+      font-weight: 700;
+      height: 20px;
+      gap: 10px;
+    }
+    .edit-profile-box input{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+      padding-left: 15px;
+      border: 0;
+      border-radius: 4px;
+      background-color:#FAFBFC;
+      font-size: 16px;
+      color: #F0F2F7;
+      width: 446px;
+      height: 54px;
+      top: 339px;
+      left: 353px;
+      border: 2px solid;
+      border-radius: 8px;
+      font-weight: 200;
+      gap: 18px;
+    }
+    
+  }
+
+  .edit-btn{
+    color: #fff;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 40px;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: #121212;
+  }
+}
+@media (max-width: 610px){
+  .edit-profile-box input{
+    width: 250px;
+  }
+}
+
+// change password
+.password{
+  padding-top: 1rem;
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .password-profile-box label{
+    font-size: 12px;
+    font-weight: 700;
+    height: 20px;
+    gap: 10px;
+  }
+  .password-profile-box input{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    border: 0;
+    border-radius: 4px;
+    background-color:#FAFBFC;
+    font-size: 16px;
+    color: #F0F2F7;
+    width: 446px;
+    height: 54px;
+    top: 339px;
+    left: 353px;
+    border: 2px solid;
+    border-radius: 8px;
+    font-weight: 200;
+    gap: 18px;
+  }
+  
+  .password-img{
+    display: flex;
+
+    .passwordimage{
+      position: relative;
+      right: 50px;
+      bottom: 10px;
+   }
+  }
+
+  .password-btn{
+    color: #fff;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 40px;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: #121212;
+  }
+}
+
+
+// Government ID
+.government-id {
+  .id{
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+    .id-profile-box label{
+      font-size: 12px;
+      width: 99px;
+      height: 20px;
+      font-weight: 700;
+    }
+
+    .id-profile-box.two {
+      margin-top: 30px;
+    }
+    .id-dropdown{
+      width: 446px;
+      height: 54px;
+      margin-top: 10px;
+      user-select: none;
+    
+      .id-dropdown-btn {
+        border: 2px;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 3px 3px 10px 6px rgba($color: #26334D, $alpha: 0.06);
+        font-weight: 300;
+        color: #121212;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+      .id-dropdown-content{
+        position: absolute;
+        padding: 10px;
+        background: #fff;
+        box-shadow: 3px 3px 10px 6px rgba($color: #26334D, $alpha: 0.06);
+        font-weight: 400;
+        color: #333;
+        width: 400px
+      }
+      .id-dropdown-items{
+        padding: 10px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .id-dropdown-items:hover {
+        background-color: #f4f4f4;
+      }
+    }
+  }
+  .password-btn{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 40px;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: #121212;
+  } 
+  
+  @media (max-width: 550px) {
+    .government-id {
+      .id{
+        .id-dropdown-btn{
+          width: 250px;
+        }
+        .id-dropdown-content{
+          position: absolute;
+          width: 250px
+        }
+      }
+    }
+  }
+}
+
+// Identity Card
+.identity-card{
+  .id-box{
+    display: grid;
+    margin-top: 30px;
+
+    .id-p{
+      display: inline-block;
+      font-weight: 300;
+      font-size: 12px;
+    }
+
+    .id-card-img{
+      margin-top: 10px;
+    }
+  }
+  
+  
+  .password-btn{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 40px;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: #121212;
+  }
+}

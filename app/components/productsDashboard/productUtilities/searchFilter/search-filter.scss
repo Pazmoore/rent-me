@@ -1,0 +1,29 @@
+.search-filter {
+  .filter {
+    background: var(--hero-bg);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 0.5rem;
+    padding: 0.625rem;
+    span {
+      color: var(--desc);
+    }
+  }
+}
+
+@media (min-width: 1499px){
+  .search-filter {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 1499px){
+  .search-filter {
+    .filter{
+      display: none;
+    }
+  }
+}

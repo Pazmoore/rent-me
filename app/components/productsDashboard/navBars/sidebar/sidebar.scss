@@ -1,0 +1,130 @@
+.flex_container{
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(to right, var(--color) 50%, var(--hero-bg) 50%);
+  overflow: hidden;
+  z-index: 900;
+
+  .content{
+    width: 16.75rem;
+    height: 100vh;
+    background: var(--hero-bg);
+    border-radius: 2rem 0 0 2rem;
+    .profile{
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-bottom: 0.0625rem solid var(--bg-border);
+      padding: 2.5rem 2rem 1.5rem;
+      .avatar{
+        width: 4rem;
+        height: 4rem;
+        background: var(--color);
+        color: var(--text1);
+      }
+      .greeting{
+        color: var(--desc);
+        font-size: 0.9rem;
+        margin-top: 0.8rem;
+      }
+    }
+    p{
+      font-size: 1.2rem;
+      font-weight: 500;
+      font-family: "Aeonik Medium";
+      text-transform: capitalize;
+      padding: 3rem 2rem 2rem;
+    }
+
+    .links{
+      height: 100%;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+      padding-bottom: 100%;
+      &::-webkit-scrollbar{
+        width: 0;
+      }
+      &::-webkit-scrollbar-track{
+        background: transparent;
+      }
+      &:hover{
+        &::-webkit-scrollbar{
+          width: 0.5rem;
+        }
+      }
+      .link{
+        color: var(--desc);
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        gap: 1rem;
+        white-space: nowrap;
+        font-size: 1.1rem;
+        font-family: "Aeonik Medium";
+        cursor: pointer;
+        padding: 1rem 2rem;
+        img{
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+      .link:hover, .active{
+        position: relative;
+        background: var(--bg);
+        color: var(--text);
+        opacity: 1;
+      }
+      .link:hover::after, .active::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 0.25rem;
+        height: 100%;
+        background: var(--color);
+        border-radius: 0 0.625rem 0.625rem 0;
+      }
+      .link1{
+        img{
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+
+      .arrow-down{
+        border: 0.0625rem solid var(--bg-border);
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.25rem;
+        margin: 1rem 2rem;
+      }
+      .pages{
+        font-size: 1.1rem;
+        opacity: 0.8;
+        padding: 2rem 2rem 0.5rem;
+      }
+    }
+  }
+  .border{
+    background: var(--bg);
+    width: 2rem;
+    height: 100vh;
+    border-radius: 2rem 0 0 2rem;
+  }
+}
+
+@media (max-width: 1320px){
+  .flex_container{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--hero-bg);
+  }
+  .show{
+    display: flex !important;
+  }
+}

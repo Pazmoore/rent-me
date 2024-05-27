@@ -1,0 +1,127 @@
+.hero{
+  background: linear-gradient(to bottom, var(--hero-bg) 85%, var(--bg) 15%);
+  padding: 2rem 2rem 0;
+  p{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0 1.5rem 1rem;
+    & span{  
+      font-family: "Aeonik Medium";
+    }
+  }
+
+  .pics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0 0;
+  }
+
+  .pics > div{
+    height: 49rem;
+  }
+
+  .img > img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .pic{
+    position: relative;
+    width: 50%;
+    background-color: var(--sidebar-bg);
+    background-image: url(/images/home/pics2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    animation: change 20s infinite ease-in-out;
+  }
+
+  .line{
+    position: absolute;
+    top: 50%;
+    right: -0.6rem;
+    height: 50%;
+    transform: translateY(-50%);
+    border: 0.35rem solid #747474;
+    border-radius: 1rem;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .line1{
+    display: none;
+  }
+
+  .map{
+    position: relative;
+    width: 50%;
+    border-radius: 1rem;
+  }
+
+  .map > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
+  @keyframes change{
+    0% {
+      background-image: url(/images/home/pics1.png);
+    }
+    20% {
+      background-image: url(/images/home/pics4.png);
+    }
+    40% {
+      background-image: url(/images/home/pics2.png);
+    }
+    60% {
+      background-image: url(/images/home/pics3.png);
+    }
+    80% {
+      background-image: url(/images/home/pics4.png);
+    }
+  }
+}
+
+@media (min-width: 1050px){
+  .hero{
+    .full{
+      width: 100%;
+      border-radius: 1rem;
+    }
+    .hide{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1050px){
+  .hero{
+    .pic{
+      width: 100%;
+    }
+    .map, .hide1{
+      display: none;
+    }
+    .full1{
+      display: block;
+      width: 100%;
+    }
+    .line1{
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 743px){
+  .hero{
+    .pics > div{
+      height: 35rem;
+    }
+    .products > img{
+      display: none;
+    }
+  }
+}

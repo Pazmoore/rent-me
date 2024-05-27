@@ -1,0 +1,139 @@
+.product-header{
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.0625rem solid var(--bg-border);
+  z-index: 800;
+  padding: 1.5rem 1rem 0;
+  margin-bottom: 1.375rem;
+
+  .nav{
+    &-header{
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+      overflow: auto;
+      &::-webkit-scrollbar{
+        display: none;
+      }
+
+      .contents{
+        position: relative;
+        .small{
+          position: absolute;
+          color: #4169E1;
+          top: 0.3rem;
+          left: 0.3rem;
+          font-size: 0.8rem;
+          font-weight: 800;
+          font-style: oblique;
+          font-family: "Aeonik Medium";
+        }
+        .alert1{
+          position: absolute;
+          color: #4169E1;
+          top: 0.85rem;
+          right: -0.3rem;
+          width: 0.6rem;
+          height: 0.6rem;
+        }
+        .color{
+          color: #CC5500;
+        }
+        .content{
+          color: var(--desc);
+          font-size: 1.2rem;
+          white-space: nowrap;
+          cursor: pointer;
+          padding: 1rem 0.3rem;
+        }
+      }
+
+      .active, .content:hover{
+        position: relative;
+        font-weight: 600;
+        color: var(--color);
+      }
+      .active::after, .content:hover::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.25rem;
+        background: var(--color);
+        border-radius: 0.625rem 0.625rem 0 0;
+      }
+    }
+  }
+
+  .buttons{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 0.5rem;
+
+    .mini-header{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .btn{
+      padding: 0.75rem 1.25rem;
+      background-color: var(--hero-bg);
+      border-radius: 0.5rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .notify{
+      position: relative;
+      cursor: pointer;
+      .alert{
+        position: absolute;
+        color: #e62e2e;
+        top: -0.3rem;
+        right: -0.3rem;
+        width: 0.75rem;
+        height: 0.75rem;
+      }
+    }
+    .icon{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1320px){
+  .product-header{
+    display: block;
+    padding: 1rem 0 0;
+    .nav{
+      border-top: 0.0625rem solid var(--bg-border);
+    }
+    .buttons{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      .icon{
+        display: block;
+        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+      }
+      .icon1{
+        font-size: 1.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+}

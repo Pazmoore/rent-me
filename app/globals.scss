@@ -1,0 +1,196 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* Disable highlighting on tap for all elements especially on mobile screens*/
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+*:active{
+  outline: none; /* Remove the outline on click if it's present */
+}
+
+html, body{
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100%;
+  max-width: 100vw;
+  font-size: clamp(9px, 15px, 19px);
+  font-weight: normal;
+  line-height: normal;
+  font-style: normal;
+  font-family: 'Aeonik Regular', 'Aeonik', sans-serif;
+}
+
+button, button:focus, input, input:focus, textarea, textarea:focus{
+  background: transparent;
+  color: var(--text);
+  border: none;
+  outline: none;
+}
+
+button{
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.9;
+}
+
+button:disabled, input:disabled{
+  opacity: 0.8;
+  cursor: auto;
+}
+
+.dark-theme .img-color{
+  filter: invert(100%);
+}
+.light-theme .img-color1{
+  filter: invert(100%);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-size: 1rem !important;
+  line-height: normal !important;
+  margin: 0.5rem 0 !important;
+}
+
+a{
+  text-decoration: none !important;
+}
+.navigate-back{
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  &-icon{
+    width: 1rem;
+    height: 1rem;
+    color: var(--text);
+  }
+  span{
+    color: var(--desc);
+    font-size: 1.15rem;
+  }
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+.loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+/* width */
+::-webkit-scrollbar{
+  width: 0.8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track{
+  background: var(--bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb{
+  background: var(--text);
+}
+
+@media (max-width: 768px){
+  html, body{
+    font-size: clamp(7.5px, 14px, 17.5px);
+  }
+}
+
+@media (max-width: 640px){
+  html, body{
+    font-size: clamp(6.5px, 13px, 16.5px);
+  }
+}
+
+@media (max-width: 375px){
+  html, body{
+    font-size: clamp(5.5px, 10.5px, 14.5px);
+  }
+}
+
+@media (max-width: 225px){
+  html, body{
+    font-size: clamp(3.5px, 6.5px, 10.5px);
+  }
+}
+
+@media (max-width: 150px){
+  html, body{
+    font-size: clamp(2.2px, 4.7px, 7.7px);
+  }
+}
+
+@media (max-width: 110px){
+  html, body{
+    font-size: clamp(1.3px, 2.7px, 4.3px);
+  }
+}
+
+@media (max-width: 60px){
+  html, body{
+    font-size: clamp(0.9px, 1.7px, 3.7px);
+  }
+}
+
+// Section title/ description
+.section-title{
+  width: 30rem;
+  font-size: 2.25rem;
+  font-family: "Aeonik medium";
+  line-height: 2.5rem;
+  text-align: center;
+  margin: auto !important;
+}
+.section-desc{
+  width: 45rem;
+  color: var(--desc);
+  line-height: 1.625rem;
+  text-align: center;
+  margin: auto !important;
+  padding: 0.5rem 0 5rem;
+}
+
+@media (max-width: 700px){
+  .section-desc{
+    width: 90%;
+  }
+}
+@media (max-width: 500px){
+  .section-title{
+    width: 25rem;
+  }
+}
+@media (max-width: 300px){
+  .section-title{
+    width: 100%;
+  }
+  .section-desc{
+    width: 100%;
+  }
+}
+
+// To hide goggle translate top bar and make page start from top
+// .skiptranslate{
+//   display: none !important;
+// }
+// body{
+//   top: 0 !important;
+// }

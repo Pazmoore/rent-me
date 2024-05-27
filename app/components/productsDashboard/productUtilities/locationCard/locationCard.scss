@@ -1,0 +1,33 @@
+/* LocationCard.module.scss */
+
+.locationCard {
+    border: 1px solid black;
+    border-radius: 15px 15px 0px 0px;
+    padding: 2.5rem 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.location-details {
+    width: 100%;
+}
+
+.pickupIcon,
+.dropoffIcon {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.pickupIcon {
+    border-bottom: 0.0625rem solid var(--button-border);
+    padding-bottom: 1rem;
+}
+
+.dropoffIcon {
+    align-items: flex-end;
+    padding-top: 1rem;
+
+    h3 {
+        color: #747474;
+    }
+}

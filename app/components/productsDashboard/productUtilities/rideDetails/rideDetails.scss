@@ -1,0 +1,183 @@
+.rideDetails {
+    background: white;
+    padding: 1.75rem 1.25rem;
+    border-radius: 1rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    .images {
+        display: flex;
+        gap: 1rem;
+
+        .ride_img {
+            background: #fafafa;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .all-images {
+            flex: 1;
+            display: flex;
+            transform: rotate(90deg);
+            gap: 1rem;
+        }
+    }
+
+    .ride-specs {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 24px 0 8px 0;
+        flex-wrap: wrap;
+
+        .ride {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            .ride-icon {
+                display: flex;
+                align-items: center;
+                gap: 0.2rem;
+                line-height: 3rem;
+            }
+        }
+    }
+
+    .rates {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        .rating > span {
+            font-size: 1.1rem !important;
+            line-height: 0.975rem;
+            opacity: 0.5;
+        }
+    }
+
+    .ride-options {
+        form {
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+
+            label {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .map {
+        border-top: 0.0625rem solid var(--button-border);
+        border-bottom: 0.0625rem solid var(--button-border);
+        padding: 1rem 0;
+        margin: 2.5rem 0;
+    }
+
+    .location_details {
+        .ride_location {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .input {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            font-size: 1.2rem;
+            border-radius: 0.25rem;
+            position: relative;
+
+            label {
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
+
+            .flex-icon {
+                display: flex;
+                align-items: center;
+                background: #fafafa;
+                padding: 0 1rem;
+                border-radius: 4px;
+                gap: 1rem;
+
+                .day {
+                    position: absolute;
+                    left: 0;
+                    top: 4.7rem;
+                    background: white;
+                    z-index: 10;
+                }
+
+                .rdp {
+                    --rdp-cell-size: 2rem; /* Size of the day cells. */
+                }
+            }
+        }
+    }
+
+    input {
+        padding: 1.25rem 1rem;
+        background: #fafafa;
+        width: 100%;
+        border: none;
+        position: relative;
+    }
+
+    button {
+        background: var(--color);
+        color: var(--text1);
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.25rem;
+        padding: 1.125rem 2.25rem;
+        border-radius: 0.25rem;
+        flex: 1;
+    }
+
+    .ride_price {
+        display: flex;
+        align-items: center;
+
+        .price {
+            flex: 1;
+
+            p {
+                font-size: 1.125rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .rideDetails {
+        .images {
+            .all-images {
+                display: none;
+            }
+        }
+        .location_details {
+            .ride_location {
+                flex-direction: column;
+            }
+        }
+    }
+}

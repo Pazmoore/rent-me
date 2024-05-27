@@ -1,0 +1,35 @@
+body{
+  --bg: #F3F6F9;
+  --hero-bg: #fff;
+  --text: #000;
+  --text1: #fff;
+  --desc: #747474;
+  --color: #121212;
+  --bg-border: rgba(18, 18, 18, 0.3);
+  --button-border: rgba(0, 0, 0, 0.5);
+  --sidebar-bg: rgb(238, 241, 244);
+  --sign-up-bg: rgb(240, 243, 246);
+  --sign-in-bg: rgba(228, 231, 234, 0.7);
+  --arrow-bg: rgba(228, 231, 234, 0.5);
+  --product:rgba(231, 233, 235);
+  --ride: rgb(240, 240, 240);
+  --hover: #4B4A4A;
+}
+
+body.dark-theme{
+  --bg: #121212;
+  --hero-bg: rgb(23, 23, 23);
+  --text: #fff;
+  --text1: #000;
+  --desc: #908d8d;
+  --color: rgb(237, 237, 237);
+  --bg-border: rgba(237, 237, 237, 0.3);
+  --button-border: rgba(255, 255, 255, 0.5);
+  --sidebar-bg: rgb(25, 25, 25);
+  --sign-up-bg: rgb(22, 22, 22);
+  --sign-in-bg: rgba(35, 35, 35, 0.3);
+  --arrow-bg: rgba(35, 35, 35, 0.5);
+  --product: rgba(42, 45, 47);
+  --ride: rgb(26, 26, 26);
+  --hover: rgb(120, 121, 121);
+}

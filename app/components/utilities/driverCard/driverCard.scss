@@ -1,0 +1,58 @@
+.driver-card {
+    .header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        .navigate {
+            text-align: end;
+        }
+    }
+
+    .navigate > img {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        border: 0.0625rem solid var(--button-border);
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .box {
+        .pic {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .driver_metrics {
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+
+                .driver_name {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    span {
+                        color: #747474;
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .rating {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    .rating > span {
+        font-size: 0.875rem;
+        line-height: 0.975rem;
+        opacity: 0.5;
+    }
+}

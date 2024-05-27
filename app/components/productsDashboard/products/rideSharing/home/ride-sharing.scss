@@ -1,0 +1,18 @@
+.ride-sharing {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    .ride-list {
+        flex: 1;
+    }
+
+    .ride_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .map {
+        flex: 1;
+    }
+}

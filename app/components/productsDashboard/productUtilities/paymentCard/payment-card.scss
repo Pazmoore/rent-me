@@ -1,0 +1,22 @@
+.paymentCard {
+    flex: 1;
+    background: white;
+    padding: 26px 32px;
+    border-radius: 10px;
+
+    .price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        line-height: 3.375rem;
+
+        p {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+    }
+
+    .total {
+        border-top: 0.0625rem solid var(--button-border);
+    }
+}

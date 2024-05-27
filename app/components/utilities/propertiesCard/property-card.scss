@@ -1,0 +1,68 @@
+.image-card{
+  .box1{
+    gap: 0.3rem;
+  }
+  .bookmark{
+    position: absolute;
+    background: var(--sidebar-bg);
+    top: 0.5rem;
+    right: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0.5rem 0.8rem;
+  }
+  .favorite1{
+    width: 1rem;
+    height: 1.5rem;
+  }
+  .locate{
+    margin-top: 0.5rem;
+  }
+  .icon2{
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .progress{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    .start{
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 1.2rem;
+      font-family: "Aeonik Medium";
+      margin-top: 1rem;
+      & span{
+        color: #0FAF62;
+        font-size: 1.3rem;
+      }
+    }
+    .invested{
+      color: var(--desc);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      .bar{
+        position: relative;
+        .circular{
+          width: 1.5rem;
+          height: 1.5rem;
+          color: #4169E1;
+        }
+        .full{
+          color: #CC5500;
+        }
+        .fixed{
+          color: var(--bg);
+        }
+      }
+    }
+    .invested1{
+      color: var(--text);
+    }
+  }
+}

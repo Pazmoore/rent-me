@@ -1,0 +1,139 @@
+.footer{
+  font-size: 1.1rem;
+  border-top: 0.0625rem solid var(--bg-border);
+  padding: 2rem 0;
+  margin: 3rem 2rem 0;
+
+  .stores{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .stores > span{
+    line-height: 1.2rem;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .links{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    & a{
+      color: var(--text);
+      font-weight: 500;
+      line-height: 1.5rem;
+      opacity: 0.8;
+      cursor: pointer;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+
+  .socials{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .socials > img{
+    cursor: pointer;
+  }
+
+  .img{
+    width: 1.65rem;
+    height: 1.65rem;
+  }
+  .img1{
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+  .img2{
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .img3{
+    width: 1.4rem;
+    height: 1.2rem;
+  }
+
+  .store{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    & button{
+      min-width: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      border: 0.1rem solid var(--text);
+      padding: 0.3rem 1rem;
+      & img{
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+
+  .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .get{
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  .download{
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1251px){
+  // width added to ensure social icons remain centralized.
+  .footer{
+    .stores > span{
+      width: 21rem;
+    }
+    .store{
+      width: 21rem;
+    }
+  }
+}
+@media (max-width: 1250px){
+  .footer{
+    .stores{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .store{
+      margin-top: 3rem;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// Custom day picker style
+.rdp{
+  --rdp-cell-size: 2.7rem; /* Size of the day cells. */
+  --rdp-caption-font-size: 1.125rem; /* Font size for the caption labels. */
+  --rdp-accent-color: #d3d1d1; /* Accent color for the background of selected days. */
+  --rdp-background-color: var(--sidebar-bg); /* Background color for the hovered/focused elements. */
+  --rdp-accent-color-dark: #3003e1; /* Accent color for the background of selected days (to use in dark-mode). */
+  --rdp-background-color-dark: #180270; /* Background color for the hovered/focused elements (to use in dark-mode). */
+  --rdp-outline: 0.125rem solid var(--rdp-accent-color); /* Outline border for focused elements */
+  --rdp-outline-selected: 0.1875rem solid var(--rdp-accent-color); /* Outline border for focused _and_ selected elements */
+  --rdp-selected-color: #3003e1; /* Color of selected day text */
+}
+.day{
+  font-size: 1.2rem;
+}
+.today{
+  color: #3003e1;
+}

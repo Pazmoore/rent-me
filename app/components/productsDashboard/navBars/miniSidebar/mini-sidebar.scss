@@ -1,0 +1,58 @@
+.sidebars{
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 4rem;
+  background: var(--text);
+  overflow: hidden;
+  padding: 2.5rem 1rem 1.5rem;
+  .logo{
+    width: 2rem;
+    height: 2rem;
+    background: rgb(237, 237, 237);
+    cursor: pointer;
+    padding: 0.5rem 0.5rem 0.6rem;
+    margin-bottom: 7.5rem;
+  }
+  &_links{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.125rem;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 15rem;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    .link-img{
+      width: 2.5rem;
+      height: 2.5rem;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+    .link-img:hover, .active{
+      background: var(--hover);
+    }
+    .mode > img{
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1320px){
+  .sidebars{
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 2rem 0 0 2rem;
+    z-index: 1100;
+  }
+  .show1{
+    display: block;
+  }
+}
