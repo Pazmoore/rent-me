@@ -1,7 +1,7 @@
 import React from "react";
 import "./ride-sharing.scss";
 import RideCard from "@/app/components/utilities/rideCard/RideCard";
-import { rideContent } from "./rideSharingData";
+import { rideContent } from "./RideSharingData";
 import { useRouter } from "next/navigation";
 import RideDetails from "../../../productUtilities/rideDetails/RideDetails";
 

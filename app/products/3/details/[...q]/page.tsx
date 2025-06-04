@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "./details.scss";
 import Riding from "@/app/components/productsDashboard/productUtilities/riding/Riding";
-import { rideContent } from "@/app/components/productsDashboard/products/rideSharing/home/rideSharingData";
+import { rideContent } from "@/app/components/productsDashboard/products/rideSharing/home/RideSharingData";
 import { TrendingRides } from "@/app/interfaces/cards/cards";
 
 const RideSharingDetails = ({ params }: { params: { q: string } }) => {
